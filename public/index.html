@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EV Charging Network Management and Optimization</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">EV</div>
+        <div><strong>EV Network</strong><span>DBMS Management</span></div>
+      </div>
+      <nav id="nav">
+        <button class="nav-item active" data-page="dashboard"><span>▦</span> Dashboard</button>
+        <button class="nav-item" data-page="stations"><span>⌂</span> Charging Stations</button>
+        <button class="nav-item" data-page="points"><span>⚡</span> Charging Points</button>
+        <button class="nav-item" data-page="reservations"><span>◷</span> Reservations</button>
+        <button class="nav-item" data-page="history"><span>↺</span> Charging History</button>
+        <button class="nav-item" data-page="payments"><span>₹</span> Payments</button>
+        <button class="nav-item" data-page="maintenance"><span>⌁</span> Maintenance</button>
+        <button class="nav-item" data-page="analytics"><span>▥</span> Analytics</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="db-mini">
+          <div class="db-dot" id="dbDot"></div>
+          <div><b id="dbLabel">Checking database</b><span>MySQL connection</span></div>
+        </div>
+        <button class="info-nav" data-page="system"><span>ⓘ</span> Database / System Info</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">RELATIONAL DATABASE MANAGEMENT SYSTEM</div>
+          <h1 id="pageTitle">Network Dashboard</h1>
+        </div>
+        <div class="top-actions">
+          <label class="role-control">View as
+            <select id="roleSelect">
+              <option>Administrator</option>
+              <option>EV User</option>
+            </select>
+          </label>
+          <div class="avatar">EV</div>
+        </div>
+      </header>
+      <div id="toast" class="toast"></div>
+      <section id="content" class="content"></section>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

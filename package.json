@@ -1,0 +1,15 @@
+{
+  "name": "ev-charging-network-management",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DBMS academic project - EV Charging Network Management and Optimization",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
+  }
+}
